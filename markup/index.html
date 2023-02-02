@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="/">
+                <div class="logo-container">
+                    <img src="images/logo.svg"/>
+                </div>
+            </a>
+            <div class="navbar-links-container">
+                <a href="/" class="navbar-link">Главная</a>
+                <a href="/" class="navbar-link">О нас</a>
+                <a href="/" class="navbar-link button-pill">
+                    Узнать подробнее
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-section">
+            <div class="hero-section-container">
+                <h1 class="hero-section-title">
+                    Оставайтесь сухими,<br>
+                    оставайтесь под зонтом</h1>
+                <p class="hero-section-text">под зонтом — это сервис аренды зонтов, созданный, чтобы уберечь вас от внезапного дождя</p>
+                <a href="/" class="navbar-link button-pill">
+                    карта станций
+                </a>
+            </div>
+        </section>
+
+        <section class="cloud-section">
+            <img class="cloud" src="images/cloud.png"/>
+            <img class="umbrella" id="umbrella-1" src="images/umbrella.png"/>
+            <img class="umbrella" id="umbrella-2" src="images/umbrella.png"/>
+            <img class="umbrella" id="umbrella-3" src="images/umbrella.png"/>
+            <img class="umbrella" id="umbrella-4" src="images/umbrella.png"/>
+            <img class="umbrella" id="umbrella-5" src="images/umbrella.png"/>
+            <img class="umbrella" id="umbrella-6" src="images/umbrella.png"/>
+            <img class="umbrella" id="umbrella-7" src="images/umbrella.png"/>
+        </section>
+
+        <section class="about-section">
+            <div class="about-container" data-row="1">
+                <div class="about-wrapper">
+                    <h2 class="about-title">Ищи станции с зонтами</h2>
+                    <p class="about-text">Наши зонты содержатся в хорошем состоянии и часто заменяются, чтобы всегда быть для вас в отличном состоянии.</p>
+                </div>
+                    <img class="about-image" src="images/about_umbrella.png"/>
+            </div>
+            <div class="about-container" data-row="1">
+                <div class="about-wrapper">
+                    <h2 class="about-title">Скачай приложение</h2>
+                    <p class="about-text">Отсканируй QR-код на станции и забери свободный зонтик.</p>
+                </div>
+                    <img class="about-image" src="images/about_phone.png"/>
+            </div>
+        </section>
+        <section id="map">
+            <h2 class="map-section-title">Карта</h2>
+            <div id="container"></div>
+        </section>
+        <section class="faq-section">
+            <h2 class="faq-section-title">Частые вопросы</h2>
+            <div class="faq-questions-container">
+                <div class="faq-question-wrapper">
+                    <a class="faq-question" id="question-1">
+                        <span>Как это работает?</span>
+                        <div><img src="images/chevron.svg"/></div>
+                    </a>
+                    <div class="faq-answer" data-for="question-1">
+                        <p>Зарегистрируйтесь в приложении под зонтом, используя свой номер мобильного телефона и банковскую карту.
+                            Найдите ближайшую к вам станцию.
+                            Находясь у станции, введите в приложении её номер/отсканируйте QR-код со станции. 
+                            Оплатите аренду через приложение. Вам откроется доступ к зонту.
+                            После использования зонта, верните его на любой станции под зонтом.</p>
+                    </div>
+                </div>
+                <div class="faq-question-wrapper">
+                    <div class="faq-question" id="question-2">
+                        <span>Сколько стоит аренда?</span>
+                        <div><img src="images/chevron.svg"/></div>
+                    </div>
+                    <div class="faq-answer" data-for="question-2">
+                        <p>Зарегистрируйтесь в приложении под зонтом, используя свой номер мобильного телефона и банковскую карту.
+                            Найдите ближайшую к вам станцию.
+                            Находясь у станции, введите в приложении её номер/отсканируйте QR-код со станции. 
+                            Оплатите аренду через приложение. Вам откроется доступ к зонту.
+                            После использования зонта, верните его на любой станции под зонтом.</p>
+                    </div>
+                </div>
+                <div class="faq-question-wrapper">
+                    <div class="faq-question">
+                        <span>Как можно вернуть зонт?</span>
+                        <div><img src="images/chevron.svg"/></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+<script src="js/index.js"></script>
+<script src="https://mapgl.2gis.com/api/js/v1"></script>
+<script>
+    const map = new mapgl.Map('container', {
+    key: 'Your API access key',
+    center: [55.31878, 25.23584],
+    zoom: 13,
+});
+</script>
+</html>

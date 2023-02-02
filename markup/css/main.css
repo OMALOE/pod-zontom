@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --main-color-dark: #25303F;
+    --main-color-purple: #9342CD;
+}
+
+* {
+    box-sizing: border-box;
+}
+html, body {
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--main-color-dark);
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    color: #fff;
+    font-weight: 800;
+}
+
+p, span {
+    color: #fff;
+}
+
+h1 {
+    font-size: 56px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+section {
+    padding: 50px 10%;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+
+}
+
+.navbar-links-container {
+    display: flex;
+    gap: 40px
+}
+
+.navbar-link {
+    display: flex;
+    font-weight: 500;
+    color: #fff;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.button-pill {
+    border-radius: 50px;
+    border: 2px solid var(--main-color-purple);
+    background-color: var(--main-color-purple);
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+    padding: 15px 20px;
+    font-weight: 600;
+}
+
+.button-pill:hover {
+    background-color: transparent;
+    color: var(--main-color-purple)!important;
+    transition: all 50ms;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    gap: 20px;
+}
+
+.hero-section-title {
+    text-align: center;
+    line-height: 1.5em;
+}
+.hero-section-text {
+    text-align: center;
+    width: 70%;
+}
+
+.cloud-section {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    min-height: 500px;
+}
+
+.cloud {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    z-index: 1;
+}
+
+.umbrella {
+    position: absolute;
+}
+
+#umbrella-1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(20deg);
+    height: 200px;
+    z-index: 5;
+}
+
+#umbrella-2 {
+    top: 50%;
+    left: 50%;
+    transform: translate(200%, -100%) rotate(43deg);
+    height: 100px;
+    z-index: 4;
+}
+
+#umbrella-3 {
+    top: 50%;
+    left: 50%;
+    transform: translate(30%, -100%) rotate(21deg);
+    height: 150px;
+    z-index: 4;
+}
+
+#umbrella-4 {
+    top: 50%;
+    left: 50%;
+    transform: translate(120%, 40%) rotate(43deg);
+    height: 100px;
+    z-index: 4;
+}
+
+#umbrella-5 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-200%, 100%) rotate(-43deg);
+    height: 100px;
+    z-index: 4;
+}
+
+#umbrella-6 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-130%, -130%) rotate(-21deg);
+    height: 150px;
+    z-index: 4;
+}
+
+#umbrella-7 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-150%, -40%) rotate(-43deg);
+    height: 180px;
+    z-index: 4;
+}
+
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.about-container:nth-last-child(1) {
+    flex-direction: row-reverse;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-wrapper {
+    width: 50%;
+}
+
+.about-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.about-image {
+    width: auto;
+    max-height: 400px;
+}
+
+#container {
+    width: 100%;
+    margin-top: 40px;
+    height: 300px;
+}
+
+.map-section-title {
+    text-align: center;
+}
+
+.faq-section-title {
+    text-align: center;
+}
+
+.faq-section {
+}
+
+.faq-questions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.faq-question-wrapper {
+    width: 100%;
+    max-width: 730px;
+}
+
+.faq-question {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+}
+
+.faq-answer-wrapper {
+
+}
+
+.faq-answer {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.15s ease-out;
+}
+
+.faq-answer p {
+    padding: 20px;
+}
+
+.faq-answer.active {
+    max-height: 500px;
+    transition: max-height 0.25s ease-in;
+}
+
