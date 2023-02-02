@@ -11,8 +11,8 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <a href="/">
+        <nav class="navbar" id="navbar">
+            <a class="logo-link" href="/">
                 <div class="logo-container">
                     <img src="images/logo.svg"/>
                 </div>
@@ -33,7 +33,7 @@
                     Оставайтесь сухими,<br>
                     оставайтесь под зонтом</h1>
                 <p class="hero-section-text">под зонтом — это сервис аренды зонтов, созданный, чтобы уберечь вас от внезапного дождя</p>
-                <a href="/" class="navbar-link button-pill">
+                <a href="/#map" class="navbar-link button-pill">
                     карта станций
                 </a>
             </div>
@@ -76,7 +76,7 @@
                 <div class="faq-question-wrapper">
                     <a class="faq-question" id="question-1">
                         <span>Как это работает?</span>
-                        <div><img src="images/chevron.svg"/></div>
+                        <div><img class="faq-chevron" src="images/chevron.svg"/></div>
                     </a>
                     <div class="faq-answer" data-for="question-1">
                         <p>Зарегистрируйтесь в приложении под зонтом, используя свой номер мобильного телефона и банковскую карту.
@@ -89,26 +89,57 @@
                 <div class="faq-question-wrapper">
                     <div class="faq-question" id="question-2">
                         <span>Сколько стоит аренда?</span>
-                        <div><img src="images/chevron.svg"/></div>
+                        <div><img class="faq-chevron" src="images/chevron.svg"/></div>
                     </div>
                     <div class="faq-answer" data-for="question-2">
-                        <p>Зарегистрируйтесь в приложении под зонтом, используя свой номер мобильного телефона и банковскую карту.
-                            Найдите ближайшую к вам станцию.
-                            Находясь у станции, введите в приложении её номер/отсканируйте QR-код со станции. 
-                            Оплатите аренду через приложение. Вам откроется доступ к зонту.
-                            После использования зонта, верните его на любой станции под зонтом.</p>
+                        <p>Аренда нашего зонта на сутки стоит 60 рублей. А это меньше стоимости поездки на метро! 
+                            Каждые 24 часа до возврата на станцию с вашей карты будут списываться 60 рублей. Если вы не вернете зонт за две недели, с вас будет списана полная стоимость зонта — 1 000 рублей.</p>
                     </div>
                 </div>
                 <div class="faq-question-wrapper">
-                    <div class="faq-question">
+                    <div class="faq-question" id="question-3">
                         <span>Как можно вернуть зонт?</span>
-                        <div><img src="images/chevron.svg"/></div>
+                        <div><img class="faq-chevron" src="images/chevron.svg"/></div>
+                    </div>
+                    <div class="faq-answer" data-for="question-3">
+                        <p>Чтобы вернуть зонт, вставьте его в слот ввода и проведите по направлению стрелки. При успешном возврате на станции загорится лампочка, а в приложении завершится аренда.
+                            Вы можете вернуть зонт на любой станции.</p>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="form-section">
+            <div class="form-container">
+                <h2>Узнайте первыми о нашем запуске!</h2>
+                <div class="form-wrapper">
+                    <div class="form-input-group">
+                        <input type="email" class="form-input" placeholder="email@example.com"/>
+                        <input type="submit" class="button-pill" value="подписаться"/>
+                    </div>
+                    <span>Нажимая кнопку “подписаться” вы даете согласие на обработку персональных данных.</span>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer-logo-container">
+            <img class="" src="images/logo.svg"/>
+        </div>
+        <div class="footer-links">
+            <a href="/" class="navbar-link">Главная</a>
+            <a href="/" class="navbar-link">О нас</a>
+            <a href="/" class="navbar-link">Карта</a>
+        </div>
+        <div class="footer-contacts"></div>
+        <div class="footer-info">
+            <span>© 2023</span>
+            <div class="made-in">
+                <span>Сделано в студии</span>
+                <a href="http://menelai.ru"><img class="menelai" src="images/logo_menelai.svg"/></a>
+            </div>
+        </div>
+    </footer>
 </body>
 <script src="js/index.js"></script>
 <script src="https://mapgl.2gis.com/api/js/v1"></script>
